@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Sands - Beach Front Resorts & Properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section with Header -->
+    <section class="hero-section" id="home">
+
+        <!-- Hero Image Slider -->
+        <div>
+            <div class="hero-slide active" style="background-image: url('../assets/H2.png');"></div>
+            <!-- <div class="hero-slide active" style="background-image: url('../assets/hero-1.png');"></div> -->
+            <!-- <div class="hero-slide" style="background-image: url('../assets/hero-2.png');"></div>
+            <div class="hero-slide" style="background-image: url('../assets/hero-3.png');"></div>
+            <div class="hero-slide" style="background-image: url('../assets/hero-4.png');"></div> -->
+        </div>
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="../assets/LOGO.png" alt="Golden Sands Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <!-- <a href="#sea-view">SEA VIEW</a> -->
+                <a href="#amenities">AMENITIES</a>
+                <!-- <a href="#villa-view">VILLA VIEW</a> -->
+                <a href="#master-plan">MASTER PLAN</a>
+                <a href="#location">LOCATION</a>
+                <a href="#contact" onclick="openEnquireModal(); return false;">CONTACT</a>
+                <a href="#gallery">GALLERY</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" onclick="openEnquireModal(); return false;" class="btn btn-gold">ENQUIRE NOW</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Right-Side Mobile Drawer -->
+        <div class="drawer-overlay" id="drawerOverlay"></div>
+        <nav class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+            <button class="drawer-close" id="drawerClose" aria-label="Close menu">&#10005;</button>
+            <div class="drawer-logo">
+                <img src="../assets/LOGO.png" alt="Golden Sands Logo">
+            </div>
+            <ul class="drawer-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <!-- <li><a href="#sea-view">SEA VIEW</a></li> -->
+                <li><a href="#amenities">AMENITIES</a></li>
+                <!-- <li><a href="#villa-view">VILLA VIEW</a></li> -->
+                <li><a href="#master-plan">MASTER PLAN</a></li>
+                <li><a href="#location">LOCATION</a></li>
+                <li><a href="#contact" onclick="openEnquireModal(); return false;">CONTACT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+            </ul>
+            <a href="#" onclick="openEnquireModal(); return false;" class="btn btn-gold drawer-cta">ENQUIRE NOW</a>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-center-text">
+                <h1 class="hero-main-title">Golden Sands</h1>
+                <p class="hero-subtitle">BEACH FRONT RESORTS & PROPERTIES</p>
+                <div class="hero-price-tag">
+                    <span class="price-label">Premium Plots starting</span>
+                    <span class="price-value">₹25,000 <small>/ Sq. Yard</small></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="hero-indicators" id="heroIndicators">
+            <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+            <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+        </div>
+
+
+
+        <div class="floating-side-buttons">
+            <a href="https://wa.me/919985585558" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <div class="floating-btn layout-btn" onclick="openLayoutModal()">
+                LAYOUT
+            </div>
+            <div class="floating-btn enquire-btn" onclick="openEnquireModal()">
+                ENQUIRE NOW
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <!-- Background image -->
+        <div class="about-bg-image"></div>
+
+        <div class="about-container">
+            <h2 class="about-main-title reveal-bottom">Welcome to the Goa of the East – The Golden Sands!
+
+            </h2>
+        </div>
+
+        <div class="about-full-width">
+            <div class="about-image-left">
+                <img src="../assets/entranc-main.png" alt="Golden Sands Entrance">
+            </div>
+            <div class="about-text">
+                <div class="premium-about-heading reveal-bottom">
+                    <span class="premium-tag">Discover</span>
+                    <h3>About Us</h3>
+                </div>
+                <p class="reveal-bottom delay-1">Golden Sands is situated next to a soft sandy beach along the
+                    Pandurangapuram - Kothapet road,
+                    and less than ten minutes drive from the bustling Bapatla city. Nestled amidst sublime luxury
+                    and breath-taking scenery, with the limited plots perfect for holiday homes and luxury villas.
+                </p>
+                <p class="reveal-bottom delay-2">Golden Sands has a total area of more than 100 acres with 11 acres
+                    dedicated to exquisite resort
+                    villas that overlook the sea. And 89 acres dedicated to villas which is open for purchase and
+                    investment. As a value addition, Golden Sands features special attractions like club house,
+                    swimming pool, contemporary amenities, landscaped gardens, restaurant and bar.</p>
+                <p class="reveal-bottom delay-3">And above all, the prospects of capital appreciation and optimum
+                    returns on investment simply
+                    enhance the significance of Golden Sands. In totality, the Golden Sands not just offers
+                    enriching levels of experience but also serves as an ideal investment paradise.</p>
+                <!-- <p class="highlight-text"><strong>Welcome to the Goa of the East – The Golden Sands!</strong></p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="stats-container reveal-bottom">
+            <div class="stat-item">
+                <img src="https://img.icons8.com/ios/50/c49a5b/mountain.png" alt="Acres Township" class="stat-icon">
+                <div class="stat-info">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Acres Township</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <img src="https://img.icons8.com/ios/50/c49a5b/home.png" alt="Luxury Villas" class="stat-icon">
+                <div class="stat-info">
+                    <div class="stat-number">320+</div>
+                    <div class="stat-label">Luxury Villas</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <img src="https://img.icons8.com/ios/50/c49a5b/deciduous-tree.png" alt="Villa acres" class="stat-icon">
+                <div class="stat-info">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Villa acres</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <img src="https://img.icons8.com/ios/50/c49a5b/swimming-pool.png" alt="Resort Acres" class="stat-icon">
+                <div class="stat-info">
+                    <div class="stat-number">11</div>
+                    <div class="stat-label">Resort Acres</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <img src="https://img.icons8.com/ios/50/c49a5b/clock--v1.png" alt="Mins From Gajuwaka City"
+                    class="stat-icon">
+                <div class="stat-info">
+                    <div class="stat-number">10 Mins</div>
+                    <div class="stat-label">From Gajuwaka City</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose-section">
+        <div class="why-choose-container">
+            <div class="why-choose-header reveal-bottom">
+                <span class="section-tag light">WHY CHOOSE GOLDEN SANDS</span>
+                <h2 class="section-title light">A Lifetime Of Luxury<br>And Value</h2>
+            </div>
+            <div class="features-grid reveal-bottom delay-2">
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="https://img.icons8.com/ios/50/c49a5b/beach.png" alt="Beach">
+                    </div>
+                    <h3 class="feature-title">Beach Front<br>Living</h3>
+                    <p class="feature-desc">Direct access to pristine beaches and sea breeze</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="https://img.icons8.com/ios/50/c49a5b/5-star-hotel.png"
+                            alt="Resort"></div>
+                    <h3 class="feature-title">Luxury<br>Resort</h3>
+                    <p class="feature-desc">World class amenities and resort lifestyle</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="https://img.icons8.com/ios/50/c49a5b/line-chart.png" alt="ROI">
+                    </div>
+                    <h3 class="feature-title">High ROI</h3>
+                    <p class="feature-desc">Excellent returns and capital appreciation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="https://img.icons8.com/ios/50/c49a5b/home.png" alt="Villas">
+                    </div>
+                    <h3 class="feature-title">Premium<br>Villas</h3>
+                    <p class="feature-desc">Spacious villas with modern architecture</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="https://img.icons8.com/ios/50/c49a5b/sun.png" alt="Sea Facing">
+                    </div>
+                    <h3 class="feature-title">Sea Facing<br>Property</h3>
+                    <p class="feature-desc">Breathtaking sea views and serene surroundings</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="https://img.icons8.com/ios/50/c49a5b/growing-money.png"
+                            alt="Appreciation"></div>
+                    <h3 class="feature-title">Future<br>Appreciation</h3>
+                    <p class="feature-desc">High growth potential and investment value</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Mighty Sea View Section -->
+    <section class="sea-view-section" id="sea-view">
+        <!-- Sliding background images -->
+        <div class="sea-slider">
+            <!-- sea-view-1: woman in pool - position center to show sea horizon -->
+            <div class="sea-slide active"
+                style="background-image: linear-gradient(to right, rgba(15,31,44,0.88) 0%, rgba(15,31,44,0.4) 55%, transparent 100%), url('../assets/sea-view-1.png'); background-position: center 25%;">
+            </div>
+            <!-- sea-view-2: beach with palm trees - show top 40% to see sea clearly -->
+            <div class="sea-slide"
+                style="background-image: linear-gradient(to right, rgba(15,31,44,0.88) 0%, rgba(15,31,44,0.4) 55%, transparent 100%), url('../assets/sea-view-2.png'); background-position: center 20%;">
+            </div>
+            <!-- sea-view-3: resort terrace with sea view - show top to see ocean & mountains -->
+            <div class="sea-slide"
+                style="background-image: linear-gradient(to right, rgba(15,31,44,0.88) 0%, rgba(15,31,44,0.4) 55%, transparent 100%), url('../assets/sea-view-3.png'); background-position: center 30%;">
+            </div>
+        </div>
+        <!-- Content overlaid on top -->
+        <div class="sea-view-content">
+            <span class="section-tag light reveal-bottom">THE MIGHTY SEA VIEW</span>
+            <h2 class="section-title light reveal-bottom delay-1">The Mighty Sea View</h2>
+            <p class="reveal-bottom delay-2">The Mighty Sea View is an experience worth mentioning.<br>With white sand
+                on the sea shore, the beach is
+                not only<br>an out of life experience but actually an untapped paradise.<br>Indeed the mighty sea view
+                is going to be the next sought-after destination.</p>
+            <a href="#" class="btn btn-gold-filled mt-20 reveal-bottom delay-3">EXPERIENCE PARADISE</a>
+        </div>
+        <!-- Dot indicators -->
+        <div class="sea-dots">
+            <span class="sea-dot active" data-index="0"></span>
+            <span class="sea-dot" data-index="1"></span>
+            <span class="sea-dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section" id="amenities">
+        <div class="amenities-container">
+            <div class="amenities-header reveal-bottom">
+                <span class="section-tag">WORLD CLASS AMENITIES</span>
+                <h2 class="section-title">Private Gateway to Unlimited Pleasures</h2>
+            </div>
+            <div class="coverflow-container">
+                <div class="coverflow-arrow left" id="coverflow-prev">&#10094;</div>
+                <div class="coverflow-slider" id="coverflow-slider">
+                    <div class="coverflow-item active">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/resort-villa-inside-1.png" alt="Modern Interior"
+                                onclick="openLightbox(this.src)" style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Modern Interior</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/lounge-1.png" alt="Lounge Area" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Lounge Area</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/club-house.png" alt="Club House" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Club House</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/dinning-area.png" alt="Fine Dining" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Fine Dining</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/gym.png" alt="Gymnasium" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Gymnasium</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/swimmingpool-1.png" alt="Swimming Pool" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Swimming Pool</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/spa.png" alt="Spa & Wellness" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Spa & Wellness</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/liquior-mart.png" alt="Bar & Lounge" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Bar & Lounge</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/basketball.png" alt="Sports Courts" onclick="openLightbox(this.src)"
+                                style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Sports Courts</div>
+                    </div>
+                    <div class="coverflow-item">
+                        <div class="coverflow-img-wrapper">
+                            <img src="../assets/kids-play-area.png" alt="Kids Play Area"
+                                onclick="openLightbox(this.src)" style="cursor: pointer;">
+                        </div>
+                        <div class="coverflow-title">Kids Play Area</div>
+                    </div>
+                </div>
+                <div class="coverflow-arrow right" id="coverflow-next">&#10095;</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Villa View Section -->
+    <section class="villa-view-section" id="villa-view">
+        <!-- Sliding background images -->
+        <div class="villa-slider">
+            <div class="villa-slide active"
+                style="background-image: linear-gradient(to left, rgba(15,31,44,0.88) 0%, rgba(15,31,44,0.4) 55%, transparent 100%), url('../assets/villas view.png'); background-position: center 40%;">
+            </div>
+            <div class="villa-slide"
+                style="background-image: linear-gradient(to left, rgba(15,31,44,0.88) 0%, rgba(15,31,44,0.4) 55%, transparent 100%), url('../assets/villas-view-1.png'); background-position: center 35%;">
+            </div>
+            <div class="villa-slide"
+                style="background-image: linear-gradient(to left, rgba(15,31,44,0.88) 0%, rgba(15,31,44,0.4) 55%, transparent 100%), url('../assets/villas-view-2.png'); background-position: center 30%;">
+            </div>
+        </div>
+        <!-- Content overlaid on top (right-aligned for visual variety) -->
+        <div class="villa-view-content">
+            <span class="section-tag light reveal-bottom">THE VILLA VIEW</span>
+            <h2 class="section-title light reveal-bottom delay-1">Breathtaking Villa Views</h2>
+            <p class="reveal-bottom delay-2">Nestled amid lush greenery and coastal serenity,<br>every villa at Golden
+                Sands commands a stunning
+                panoramic vista.<br>Wake up to serene landscapes, feel the gentle breeze<br>and live life at its most
+                beautiful every single day.</p>
+            <a href="#villas" class="btn btn-gold-filled mt-20 reveal-bottom delay-3">EXPLORE VILLAS</a>
+        </div>
+        <!-- Dot indicators -->
+        <div class="villa-dots">
+            <span class="villa-dot active" data-index="0"></span>
+            <span class="villa-dot" data-index="1"></span>
+            <span class="villa-dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Master Plan Section -->
+    <section class="master-plan-section" id="master-plan">
+        <div class="master-plan-container">
+            <div class="master-plan-header">
+                <div>
+                    <span class="section-tag reveal-bottom">MASTER PLAN</span>
+                    <h2 class="section-title reveal-bottom delay-1">Lavishly Planned<br>Leisure Paradise</h2>
+                    <p class="mt-20 reveal-bottom delay-2">Thoughtfully designed layout with wide<br>roads, lush green
+                        spaces and world
+                        class<br>amenities for a perfect living experience.</p>
+                    <div class="master-plan-buttons reveal-bottom delay-3">
+                        <a href="#" class="btn btn-gold-filled">VIEW MASTER PLAN</a>
+                        <a href="#" class="btn btn-navy">DOWNLOAD PLAN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="master-plan-visual reveal-bottom delay-2">
+                <img src="../assets/layout-topview.png" alt="Master Plan Layout" class="layout-img">
+                <div class="legend-box">
+                    <ul class="legend-list">
+                        <li><span class="legend-icon blue"></span> Club House</li>
+                        <li><span class="legend-icon light-blue"></span> Swimming Pool</li>
+                        <li><span class="legend-icon red"></span> Resort Villas</li>
+                        <li><span class="legend-icon green"></span> Parks & Gardens</li>
+                        <li><span class="legend-icon orange"></span> Commercial Zone</li>
+                        <li><span class="legend-icon blue-dark"></span> Beach Access</li>
+                        <li><span class="legend-icon yellow"></span> Entrance Gate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="location-contact-section" id="location">
+        <!-- Full-width map background -->
+        <div class="location-map-full">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d80.44299!3d15.817468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a47701defbc3f%3A0x87552cfe85cfd733!2sGolden%20Sands%20Beach%20Front%20Resorts%20%26%20Properties!5e0!3m2!1sen!2sin!4v1686572800000"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Golden Sands Location">
+            </iframe>
+        </div>
+        <!-- Contact card floating on the right -->
+        <div class="location-contact-card" id="contact">
+            <span class="section-tag light reveal-bottom">GET IN TOUCH</span>
+            <h2 class="section-title light reveal-bottom delay-1">Contact Us</h2>
+            <div class="contact-details-list reveal-bottom delay-2">
+                <div class="contact-detail-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Site Address</h4>
+                        <p>Kothawadarevu, Near Pandurangapuram,<br>Bapatla Mandal, Guntur Dist.<br>Andhra Pradesh,
+                            India.</p>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                            <polyline points="17 2 12 7 7 2"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Corporate Office</h4>
+                        <p>Flat No:102, 1st Floor, Sri Ikon Residency,<br>Plot No 496, Matrusri, near Miyapur,<br>Hyderabad, Telangana 500049</p>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91-998 558 5558</p>
+                        <a href="https://wa.me/919985585558" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: var(--secondary-color); text-decoration: none; margin-top: 8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.565 0-3.083.37-4.553 1.077L6.064 3.68l1.477 4.632c-.779 1.434-1.194 3.045-1.194 4.743 0 5.006 4.07 9.077 9.076 9.077 2.418 0 4.692-.936 6.4-2.475 1.707-1.539 2.647-3.811 2.647-6.122 0-5.006-4.071-9.077-9.076-9.077"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:digitalwintechnologies@gmail.com">digitalwintechnologies@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Website</h4>
+                        <p><a href="http://www.goldensandsindia.in" target="_blank">www.goldensandsindia.in</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <a href="#" onclick="openEnquireModal(); return false;" class="btn btn-gold-filled">ENQUIRE NOW</a>
+                <a href="tel:+919985585558" class="btn btn-outline">CALL US</a>
+                <a href="https://www.google.com/maps/search/Miyapur,+Hyderabad" target="_blank" class="btn btn-outline">GET DIRECTIONS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-container">
+            <div class="gallery-header reveal-bottom">
+                <span class="section-tag">GALLERY</span>
+                <h2 class="section-title">A Glimpse Of Paradise</h2>
+                <p>Explore the beauty and luxury of Golden Sands through our curated gallery.</p>
+            </div>
+            <div class="gallery-marquee-container">
+                <div class="gallery-marquee">
+                    <!-- Set 1 -->
+                    <div class="gallery-item"><img src="../assets/gal-1.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-2.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-3.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-4.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-5.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-6.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-7.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-8.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-9.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-10.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-11.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-12.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main-1.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main-2.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main-3.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                </div>
+                <!-- Duplicate set for continuous scroll -->
+                <div class="gallery-marquee" aria-hidden="true">
+                    <div class="gallery-item"><img src="../assets/gal-1.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-2.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-3.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-4.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-5.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-6.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-7.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-8.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-9.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-10.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-11.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-12.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main-1.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main-2.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main-3.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                    <div class="gallery-item"><img src="../assets/gal-main.jpg" alt="Gallery Image" loading="lazy"
+                            onclick="openLightbox(this.src)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../assets/LOGO.png" alt="Golden Sands Logo" class="footer-logo">
+                <p>A premium beachfront opportunity in the heart of Bapatla. Invest in luxury, transparency, and a
+                    future of growth.</p>
+            </div>
+            <div class="footer-explore">
+                <h3>EXPLORE</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#sea-view">Sea View</a></li> -->
+                    <li><a href="#amenities">Amenities</a></li>
+                    <!-- <li><a href="#villa-view">Villa View</a></li> -->
+                    <li><a href="#master-plan">Master Plan</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact" onclick="openEnquireModal(); return false;">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-visit">
+                <h3>VISIT US</h3>
+                <p>Kothawadarevu, Near Pandurangapuram,<br>Bapatla Mandal, Guntur Dist.<br>Andhra Pradesh,<br>India.</p>
+                <div class="footer-contact-info">
+                    <p><strong>Email:</strong> <a
+                            href="mailto:digitalwintechnologies@gmail.com">digitalwintechnologies@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919985585558">+91-998 558 5558</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">&copy; 2026 Golden Sands. All rights reserved.</div>
+            <div class="footer-designed">Designed by <strong>Digital win technologies</strong></div>
+            <div class="footer-socials">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Lightbox Modal -->
+    <div id="gallery-lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Enquire Now Modal -->
+    <div id="enquire-modal" class="enquire-modal-overlay">
+        <div class="enquire-modal-content">
+            <span class="enquire-modal-close" onclick="closeEnquireModal()">&times;</span>
+            <h2 class="section-title">Enquire Now</h2>
+            <p style="color: var(--text-light); margin-bottom: 20px;">Please fill in your details and we will get back
+                to you shortly.</p>
+            <form id="enquire-form" class="enquire-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <select required>
+                    <option value="" disabled selected>Interested In</option>
+                    <option value="villa">Luxury Villa</option>
+                    <option value="plot">Plot</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Your Message" rows="4"></textarea>
+                <button type="submit" class="btn">Submit Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Layout Download Modal -->
+    <div id="layout-modal" class="enquire-modal-overlay">
+        <div class="enquire-modal-content">
+            <span class="enquire-modal-close" onclick="closeLayoutModal()">&times;</span>
+            <h2 class="section-title">Download Layout</h2>
+            <p style="color: var(--text-light); margin-bottom: 20px;">Please fill in your details to download the Golden
+                Sands Layout PDF.</p>
+            <form id="layout-form" class="enquire-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <button type="submit" class="btn" style="background-color: #9d2f09; border-color: #9d2f09;">Download
+                    PDF</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
